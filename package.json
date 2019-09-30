@@ -7,14 +7,18 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --aot --prod"
   },
   "private": true,
   "dependencies": {
+    "@angular-devkit/build-angular": "~0.803.6",
     "@angular/animations": "~8.2.8",
     "@angular/cdk": "^8.0.0",
+    "@angular/cli": "~8.3.6",
     "@angular/common": "~8.2.8",
     "@angular/compiler": "~8.2.8",
+    "@angular/compiler-cli": "~8.2.8",
     "@angular/core": "~8.2.8",
     "@angular/forms": "~8.2.8",
     "@angular/platform-browser": "~8.2.8",
@@ -26,14 +30,13 @@
     "@nebular/theme": "^4.3.1",
     "core-js": "^2.5.4",
     "eva-icons": "^1.1.1",
+    "express": "^4.17.1",
+    "path": "^0.12.7",
     "rxjs": "~6.5.3",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.803.6",
-    "@angular/cli": "~8.3.6",
-    "@angular/compiler-cli": "~8.2.8",
     "@angular/language-service": "~8.2.8",
     "@schematics/angular": "~8.3.6",
     "@types/jasmine": "~2.8.8",
