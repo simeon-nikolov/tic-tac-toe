@@ -1,0 +1,14 @@
+<h2>
+    <span class="current-player-label">Current Player:&nbsp;{{ player }}</span>
+    <span class="winner-label" *ngIf="winner">Winner: {{ winner }}</span>
+</h2>
+
+<button nbButton size="medium" class="new-game-btn" (click)="newGame()">Start New Game</button>
+
+<main>
+    <tt-square 
+        *ngFor="let val of sqares; let i = index;" 
+        [value]="val"
+        (click)="makeMove(i)">
+    </tt-square>
+</main>

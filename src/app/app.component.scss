@@ -1,0 +1,12 @@
+::ng-deep {
+    nb-layout-header {
+        nav {
+            justify-content: center !important;
+        }
+    }
+}
+
+nb-layout-column {
+    display: flex;
+    justify-content: center;
+}
