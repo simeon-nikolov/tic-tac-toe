@@ -7,7 +7,7 @@
 
 <main>
     <tt-square 
-        *ngFor="let val of sqares; let i = index;" 
+        *ngFor="let val of sqares; let i = index; trackBy: trackByFunction;" 
         [value]="val"
         (click)="makeMove(i)">
     </tt-square>

@@ -43,6 +43,10 @@ export class BoardComponent implements OnInit {
     this.xIsNext = !this.xIsNext;
   }
 
+  trackByFunction(index) {
+    return index;
+  }
+
   calculateWinner() {
     const lines = [
       [0, 1, 2],
